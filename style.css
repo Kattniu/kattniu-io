@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
 
 body {
-    background-color: #4b3a20;
     font-family: 'Playwrite MX', cursive;
     margin: 0 ;
     padding: 0;
@@ -20,7 +19,7 @@ header {
     border : 10px solid rgb(255, 255, 255);
     display: block;
     margin: 0 auto;
-    border-radius: 46%;
+    border-radius: 50%;
     width: 30rem;
     box-shadow: 0 0 10px rgba(166, 193, 202, 0.58); /* Sombra alrededor de la imagen */   
 }
@@ -67,11 +66,11 @@ nav a:hover {
     transition: background-color 0.7s;
 }
 .bienvenido { /*todo el fondo de la seccion  */
-    padding: 50px ;
     text-align: center;
     background-image: url("../andres/imagenes/pexels-julia-volk-5273350.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 10%;
     color: #fff;   
 }
 
@@ -191,21 +190,21 @@ nav a:hover {
 
 #special-videos video {
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
     max-width: 100%;
     height: auto;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
-    background-color: #fff; /* Fondo blanco detrás del video */
-    padding: 20px;
+    background-color: #b2dcef; /* Fondo blanco detrás del video */
+    padding: 15px;
 }
 
 /*------------------_____________________________________- para el pie de pagina */
 
 footer {
-    background-color: #3c3226;
+    background-color: #40372c;
     color: #fff;
-    padding: 10px 0;
+
     text-align: left;
 }
 
