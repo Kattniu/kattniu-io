@@ -118,7 +118,7 @@ nav a:hover {
 /* Estilos para la galería de fotos */
 
 #photo-gallery {
-    background-image:url("../andres/imagenes/pexels-julia-volk-5273350.jpg");
+    background-image:url("../imagenes/pexels-julia-volk-5273350.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
@@ -176,7 +176,7 @@ nav a:hover {
 
 /* Estilos para la sección de videos especiales */
 #special-videos {
-    background-image: url("../andres/imagenes/pexels-minan1398-906150.jpg"); 
+    background-image: url("../imagenes/pexels-minan1398-906150.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
