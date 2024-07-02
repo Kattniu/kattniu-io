@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
 
 body {
+    background-color: #4d4438;
     font-family: 'Playwrite MX', cursive;
     margin: 0 ;
     padding: 0;
@@ -15,6 +16,7 @@ header {
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;  
 }
+
 .foto img {
     border : 10px solid rgb(255, 255, 255);
     display: block;
@@ -23,9 +25,11 @@ header {
     width: 30rem;
     box-shadow: 0 0 10px rgba(166, 193, 202, 0.58); /* Sombra alrededor de la imagen */   
 }
+
 .foto {
     margin-bottom: 30px;
 } 
+
 .frase { /* contedor de la frase */
     margin: 0 auto 10rem;
     padding: 15px;
@@ -36,14 +40,17 @@ header {
     text-align: center;
     margin-top: 50px;
 }
+
 .frase p {
     margin: 50px 30px 20px 20px;
     color: #1a335c;
 }
+
 nav ul {
     padding: 40px;
     list-style: none;
     display: flex;
+    justify-content: center; /* Centrar los elementos en la barra de navegación */
 }
 
 nav li {
@@ -65,9 +72,10 @@ nav a:hover {
     border-radius: 5px;
     transition: background-color 0.7s;
 }
+
 .bienvenido { /*todo el fondo de la seccion  */
     text-align: center;
-    background-image: url("../andres/imagenes/pexels-julia-volk-5273350.jpg"); 
+    background-image: url("/imagenes/pexels-julia-volk-5273350.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10%;
@@ -78,16 +86,14 @@ nav a:hover {
     font-size: 3rem;
     margin-bottom: 10px;
     color:#fff
-
 }
+
 .bienvenido p {
-     font-family: "Mooli";
+    font-family: "Mooli";
     margin-bottom: 50px;
 }
 
-
 /*nuestra historia____________________________________________________________________  */
-
 
 /* Estilos para la sección de nuestra historia */
 #our-story {
@@ -103,6 +109,7 @@ nav a:hover {
     color: #1947aa;
     margin-bottom: 20px;
 }
+
 #our-story p { /* contenedor de mi texto dentro de nuestra historia*/
     padding: 5%;
     margin-top: 50px;
@@ -111,9 +118,8 @@ nav a:hover {
 }
 
 /* Estilos para la galería de fotos */
-
 #photo-gallery {
-    background-image:url("../andres/imagenes/pexels-julia-volk-5273350.jpg");
+    background-image:url("/imagenes/pexels-julia-volk-5273350.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
@@ -124,8 +130,8 @@ nav a:hover {
     font-size: 30px;
     color: #0e83b1;
     padding: 50px 0;
-
 }
+
 .photo-grid {
     border : 10px solid rgb(255, 255, 255);
     padding: 50px;
@@ -145,7 +151,6 @@ nav a:hover {
 }
 
 /*----------- momentos---------------*/
-
 #momentos {
     margin: 0;
     padding: 5rem;
@@ -160,18 +165,16 @@ nav a:hover {
 #momentos li {
     margin :10px;
 }
+
 #momentos h2 {
     font-size: 2rem;
     color: #0e83b1;
     margin-bottom: 20px;
 }
 
-
-
-
 /* Estilos para la sección de videos especiales */
 #special-videos {
-    background-image: url("../andres/imagenes/pexels-minan1398-906150.jpg"); 
+    background-image: url("/imagenes/pexels-minan1398-906150.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
@@ -196,11 +199,9 @@ nav a:hover {
 }
 
 /*------------------_____________________________________- para el pie de pagina */
-
 footer {
     background-color: #40372c;
     color: #fff;
-
     text-align: left;
 }
 
@@ -214,16 +215,19 @@ footer .social {
     margin: 0 10px;
     transition: transform 0.4s ease;
 }
+
 .social a img {
     width: 50px;
     height: auto;
     margin: 10px 0;
 }
+
 .social a:hover {
     background-color: #333;
     transform: scale(1.1);
     margin: 0 10px;
 }
+
 .social p {
     margin-top: 20px;
     font-size: 14px;
@@ -232,12 +236,12 @@ footer .social {
 }
 
 /*_______MENSAJE__________________________________________________________________-*/
-
 #letter {
     background-color: #f3f4e2;
     padding: 8rem;
 }
-#letter p{
+
+#letter p {
     font-family: "Mooli";
     font-size: 18px; /* Tamaño de fuente */
     line-height: 1.8; /* Altura de línea para mejorar la legibilidad */
@@ -246,15 +250,14 @@ footer .social {
     color: #49361e; /* Color del texto */
 }
 
-#letter h1{
+#letter h1 {
     margin: 20px;
     color: #1947aa;
     font-size: 3rem;
     padding: 5px;
-
 }
 
-#letter img{
+#letter img {
     display: block;
     margin: 5% auto;
     max-width: 40%;
@@ -262,5 +265,106 @@ footer .social {
     border: 20px solid transparent;
     padding: 3px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
 
+/* Media queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .foto img {
+        width: 80%; /* Ajusta el tamaño de la imagen */
+    }
+
+    .frase {
+        max-width: 90%;
+        margin: 0 auto 5rem;
+    }
+
+    .frase p {
+        margin: 20px 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca los elementos en columna */
+        padding: 20px 0;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .bienvenido {
+        padding: 5%;
+    }
+
+    .bienvenido h1 {
+        font-size: 2rem;
+    }
+
+    .bienvenido p {
+        margin-bottom: 20px;
+    }
+
+    #our-story {
+        padding: 5%;
+    }
+
+    #our-story h1 {
+        font-size: 2rem;
+    }
+
+    #our-story p {
+        padding: 5%;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    #photo-gallery {
+        padding: 20px;
+    }
+
+    #photo-gallery h2 {
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+
+    .photo-grid {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    #momentos {
+        padding: 2rem;
+    }
+
+    #momentos h2 {
+        font-size: 1.5rem;
+    }
+
+    #special-videos {
+        padding: 20px;
+    }
+
+    #special-videos h2 {
+        font-size: 1.5rem;
+    }
+
+    footer .social a img {
+        width: 30px;
+    }
+
+    #letter {
+        padding: 4rem;
+    }
+
+    #letter h1 {
+        font-size: 2rem;
+    }
+
+    #letter img {
+        max-width: 80%;
+    }
 }
