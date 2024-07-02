@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&family=Mooli&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+
+body {
+    background-color: #4b3a20;
+    font-family: 'Playwrite MX', cursive;
+    margin: 0 ;
+    padding: 0;
+}
+
+header {
+    padding: 2px 0;
+    text-align: center;
+    background-image:  radial-gradient(#659fe7 0.5px, transparent 0.3px), 
+    radial-gradient(#fcfcfc 0.5px, rgb(120, 209, 227) 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;  
+}
+.foto img {
+    border : 10px solid rgb(255, 255, 255);
+    display: block;
+    margin: 0 auto;
+    border-radius: 46%;
+    width: 30rem;
+    box-shadow: 0 0 10px rgba(166, 193, 202, 0.58); /* Sombra alrededor de la imagen */   
+}
+.foto {
+    margin-bottom: 30px;
+} 
+.frase { /* contedor de la frase */
+    margin: 0 auto 10rem;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(16, 1, 1, 0.1);
+    max-width: 60%;
+    background-color: #fffdf8;
+    text-align: center;
+    margin-top: 50px;
+}
+.frase p {
+    margin: 50px 30px 20px 20px;
+    color: #1a335c;
+}
+nav ul {
+    padding: 40px;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 50px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+nav a { /*el encabezado la barra del menu*/
+    padding: 20px;
+    text-decoration:none;
+    color: #f8eff5;
+}
+
+nav a:hover {
+    background-color: #eceabf;
+    transition: background-color 0.3s;
+    color: lightgreen;
+    border-radius: 5px;
+    transition: background-color 0.7s;
+}
+.bienvenido { /*todo el fondo de la seccion  */
+    padding: 50px ;
+    text-align: center;
+    background-image: url("../andres/imagenes/pexels-julia-volk-5273350.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;   
+}
+
+.bienvenido h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color:#fff
+
+}
+.bienvenido p {
+     font-family: "Mooli";
+    margin-bottom: 50px;
+}
+
+
+/*nuestra historia____________________________________________________________________  */
+
+/* Reset de estilos básicos para eliminar márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos para la sección de nuestra historia */
+#our-story {
+    background-color: #ffffff;
+    padding: 10%;
+    text-align: center;
+}
+
+#our-story h1 {
+    font-family: "Mooli";
+    font-size: 50px;
+    color: #1947aa;
+    margin-bottom: 20px;
+}
+#our-story p { /* contenedor de mi texto dentro de nuestra historia*/
+    padding: 5%;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilos para la galería de fotos */
+
+#photo-gallery {
+    background-image:url("../andres/imagenes/pexels-julia-volk-5273350.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+
+#photo-gallery h2 { /*titulos h2*/
+    font-size: 30px;
+    color: #0e83b1;
+    padding: 50px 0;
+
+}
+.photo-grid {
+    border : 10px solid rgb(255, 255, 255);
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid; /* hace que el contenedor use un sistema de cuadrícula.*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*asegura que las columnas se ajusten automáticamente según el tamaño del contenedor, con cada columna teniendo un tamaño mínimo de 200px*/
+    gap: 20px; /* agrega un espacio de 20px entre cada elemento.*/
+    justify-items: center; /*centra cada imagen horizontalmente dentro de su celda.*/
+}
+
+.photo-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/*----------- momentos---------------*/
+
+#momentos {
+    margin: 0;
+    padding: 5rem;
+    text-align: center;
+    background-color: #faf5fa; /* Fondo gris claro */
+}
+
+#momentos ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+}
+
+#momentos li {
+    margin :10px;
+}
+#momentos h2 {
+    font-size: 2rem;
+    color: #0e83b1;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Estilos para la sección de videos especiales */
+#special-videos {
+    background-image: url("../andres/imagenes/pexels-minan1398-906150.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+
+#special-videos h2 {
+    font-size: 28px;
+    color: #f4f8fd;
+    margin-bottom: 20px;
+}
+
+#special-videos video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    background-color: #fff; /* Fondo blanco detrás del video */
+    padding: 20px;
+}
+
+/*------------------_____________________________________- para el pie de pagina */
+
+footer {
+    background-color: #3c3226;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+}
+
+footer .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    margin: 0 10px;
+    transition: transform 0.4s ease;
+}
+.social a img {
+    width: 50px;
+    height: auto;
+    margin: 10px 0;
+}
+.social a:hover {
+    background-color: #333;
+    transform: scale(1.1);
+    margin: 0 10px;
+}
+.social p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    color: #ccc;
+}
+
+/*_______MENSAJE__________________________________________________________________-*/
+
+#letter {
+    background-color: #f3f4e2;
+    padding: 8rem;
+}
+#letter p{
+    font-family: "Mooli";
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.8; /* Altura de línea para mejorar la legibilidad */
+    text-align: justify; /* Alineación justificada del texto */
+    margin-bottom: 20px; /* Espacio inferior entre párrafos */
+    color: #49361e; /* Color del texto */
+}
+
+#letter h1{
+    margin: 20px;
+    color: #1947aa;
+    font-size: 3rem;
+    padding: 5px;
+
+}
+
+#letter img{
+    display: block;
+    margin: 5% auto;
+    max-width: 40%;
+    height: auto;
+    border: 20px solid transparent;
+    padding: 3px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+
+}
