@@ -88,12 +88,7 @@ nav a:hover {
 
 /*nuestra historia____________________________________________________________________  */
 
-/* Reset de estilos básicos para eliminar márgenes y padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 /* Estilos para la sección de nuestra historia */
 #our-story {
     background-color: #ffffff;
@@ -103,6 +98,7 @@ nav a:hover {
 
 #our-story h1 {
     font-family: "Mooli";
+    text-align: center;
     font-size: 50px;
     color: #1947aa;
     margin-bottom: 20px;
